@@ -37,9 +37,6 @@ class _HomePageState extends State<HomePage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // const SizedBox(
-              //   height: 100.0,
-              // ),
               Stack(
                 children: [
                   Container(
@@ -97,7 +94,7 @@ class _HomePageState extends State<HomePage> {
               Container(
                 padding: const EdgeInsets.all(7.0),
                 child: CheckboxListTile(
-                    title: const Text('Minusculas hola buenas tardes ssssssssssssssss'),
+                    title: const Text('Minusculas'),
                     // checkColor: Colors.black,
                     activeColor: Colors.blue,
                     value: checkbox1,
@@ -211,7 +208,7 @@ class _HomePageState extends State<HomePage> {
 
   void onTrigger() {
     if (checkbox3 && checkbox4 == true) {
-      final password = generatePasswordNoCharNoNum();
+      final password = generarMayusYMinus();
       controller.text = password;
     } else if (checkbox == true) {
       final password = generarMayusculas();
@@ -223,10 +220,10 @@ class _HomePageState extends State<HomePage> {
       final password = generarNumeros();
       controller.text = password;
     } else if (checkbox3 == true) {
-      final password = generatePasswordNoChar();
+      final password = generarVarios();
       controller.text = password;
     } else if (checkbox4 == true) {
-      final password = generatePasswordNoNum();
+      final password = generarCaracteresEspeciales();
       controller.text = password;
     }
   }

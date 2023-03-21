@@ -50,9 +50,8 @@ String generarNumeros() {
   }).join('');
 }
 
-// Generate a password without Characters
 
-String generatePasswordNoChar() {
+String generarVarios() {
   int length = 10;
   const lowerLetter = 'abcdefghijklmnopqrstuvwxyz';
   const upperLetter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -69,9 +68,7 @@ String generatePasswordNoChar() {
   }).join('');
 }
 
-// Generate a password without Numbers
-
-String generatePasswordNoNum() {
+String generarCaracteresEspeciales() {
   const length = 20;
 
   const characters = '!@#*()_-=+{]}|:?;/>.,<';
@@ -86,9 +83,7 @@ String generatePasswordNoNum() {
   }).join('');
 }
 
-// Generate a password without Characters and Numbers
-
-String generatePasswordNoCharNoNum() {
+String generarMayusYMinus() {
   const length = 10;
   const lowerLetter = 'abcdefghijklmnopqrstuvwxyz';
   const upperLetter = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
